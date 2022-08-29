@@ -1,13 +1,25 @@
 /* import de fuentes */
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700;900&display=swap');
 
 /* estilos personalizados */
+.document-container {
+  max-width: 1200px;
+  min-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
 
 /* sobreescribir estilo de bootstrap 5  para adaptar a max 1034px para 1100*/
 @media (min-width: 1920px) {
   .container, .container-fluid {
     max-width: 1920px;
   }
+}
+
+.banner-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .banner-text_raleway {
@@ -22,14 +34,90 @@
   line-height: 1.2em;
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1200px) {
   .banner-title {
-    font-size: 9em;
+    font-size: 5.5em;
   }  
+}
+
+.banner-text_small {
+  font-size: 1em;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.banner-text_small p {
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
+}
+.banner-text_small p > a {
+  font-weight: 700;
+  color: #000;
+  text-decoration: none;
 }
 
 .banner-body {
   text-align: center;
   display: block;
-  font-size: 1em;
+}
+
+.banner-3x2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.product-list {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.product-container {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+}
+.product-link {
+  text-decoration: none;
+}
+.product-image img {
+  object-fit: cover;
+  height: 18.8em;
+  width: 100%;
+  object-position: center bottom;
+}
+.product-recomended .product-image img {
+  height: 14em;
+}
+.product-name {
+  text-align: center;
+  color: #000;
+  font-size: 0.95rem;
+  line-height: 1.1rem;
+  text-transform: uppercase;
+  min-height: 4.5em;
+  padding: 0.5em 0;
+}
+.product-button {
+  text-align: center;
+  text-transform: uppercase;
+  color: #000;
+  padding-bottom: 2em;
+}
+.product-button .product-button_link {
+  border-radius: 0;
+  font-size: 0.750rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  padding: 2px 7px;
+}
+
+@media (min-width: 768px) {
+  .col-md-order-last {
+    order: 10;
+  }
 }
