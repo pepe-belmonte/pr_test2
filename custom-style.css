@@ -1,0 +1,35 @@
+/* import de fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;900&display=swap');
+
+/* estilos personalizados */
+
+/* sobreescribir estilo de bootstrap 5  para adaptar a max 1034px para 1100*/
+@media (min-width: 1920px) {
+  .container, .container-fluid {
+    max-width: 1920px;
+  }
+}
+
+.banner-text_raleway {
+  font-family: 'Raleway', sans-serif;
+}
+.banner-title {
+  font-weight: 900;
+  font-size: 7vw;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  line-height: 1.2em;
+}
+
+@media (min-width: 1920px) {
+  .banner-title {
+    font-size: 9em;
+  }  
+}
+
+.banner-body {
+  text-align: center;
+  display: block;
+  font-size: 1em;
+}
